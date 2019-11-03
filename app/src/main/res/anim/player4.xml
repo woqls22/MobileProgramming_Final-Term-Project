@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:fillAfter="true">
+    <translate
+        android:duration = "2000"
+        android:fromXDelta="0"
+        android:toXDelta="960"/>
+    <rotate
+        android:duration = "1000"
+        android:fromDegrees="0"
+        android:pivotX="3%"
+        android:pivotY="3%"
+        android:toDegrees="5"/>
+</set>

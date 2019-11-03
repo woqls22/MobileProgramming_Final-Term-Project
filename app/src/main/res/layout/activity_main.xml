@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1D9EF"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:background="#9BC2E5"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text = "당근쌤 오퍼"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:textColor="#000000"
+            android:textSize="40dp" />
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:background="#9BC2E5"
+            android:scaleType="centerInside"
+            android:src="@drawable/more"
+            android:onClick = "setting"
+            android:id = "@+id/menubtn"/>
+    </LinearLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_marginTop="15dp">
+        <ImageView
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_column = "0"
+            android:src="@drawable/menu"
+            />
+        <Button
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text = "오늘 뭐먹지"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:textColor="#000000"
+            android:textSize="40dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:background="#9BC2E5"
+            android:scaleType="centerInside"
+            android:id = "@+id/meals"
+            android:onClick="mOnClick"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+
+             />
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:layout_height="80dp"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="20dp"
+            android:layout_column = "0"
+            android:src="@drawable/clothes"
+            />
+        <Button
+            android:layout_width="234dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text = "오늘 뭐입지"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:textColor="#000000"
+            android:textSize="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_column="1"
+            android:background="#9BC2E5"
+            android:layout_columnSpan="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="10dp"
+            android:onClick = "mOnClick"
+            android:id = "@+id/cloth" />
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:layout_height="80dp"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="20dp"
+            android:layout_column = "0"
+            android:src="@drawable/bike"
+            />
+        <Button
+            android:layout_width="234dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text = "주말에 핫플 어디가?!"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_column="1"
+            android:background="#9BC2E5"
+            android:layout_columnSpan="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="10dp"
+            android:onClick = "mOnClick"
+            android:id = "@+id/date" />
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:layout_height="80dp"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="20dp"
+            android:layout_column = "0"
+            android:src="@drawable/friends"
+            />
+        <Button
+            android:layout_width="234dp"
+            android:layout_gravity="center_vertical"
+            android:text = "힙한곳 어디야"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_column="1"
+            android:background="#9BC2E5"
+            android:layout_columnSpan="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="10dp"
+            android:onClick = "mOnClick"
+            android:id = "@+id/play"/>
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:layout_height="80dp"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="20dp"
+            android:layout_column = "0"
+            android:src="@drawable/gamble"
+            />
+        <Button
+            android:layout_width="234dp"
+            android:layout_gravity="center_vertical"
+            android:text = "패자는 카운터로"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_column="1"
+            android:background="#9BC2E5"
+            android:layout_columnSpan="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:onClick = "mOnClick"
+            android:id = "@+id/gamble"
+            android:layout_marginLeft="10dp"
+            />
+    </GridLayout>
+
+
+</LinearLayout>

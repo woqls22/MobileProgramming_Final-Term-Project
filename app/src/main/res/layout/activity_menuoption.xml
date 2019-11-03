@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C1D9EF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:background="#9BC2E5"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:text = "오늘은 뭐가 먹고싶어 ?"
+            android:textSize="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:textColor="#000000" />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:background="#9BC2E5"
+            android:scaleType="centerInside"
+            android:src="@drawable/teacher"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:columnCount="3">
+        <ToggleButton
+            android:id="@+id/koreanfood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            android:background="#9BC2E5"
+            android:textSize="25dp"
+            android:fontFamily="@font/nanumbarunpenb"
+            android:textOff="한식"
+            android:textOn="V한식"
+            android:onClick = "ischeck"/>
+        <ToggleButton
+            android:id="@+id/chinesefood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            android:background="#9BC2E5"
+            android:textSize="25dp"
+            android:fontFamily="@font/nanumbarunpenb"
+            android:textOff="중식"
+            android:textOn="V중식"
+            android:onClick = "ischeck"/>
+        <ToggleButton
+            android:id="@+id/anything"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            android:background="#9BC2E5"
+            android:textSize="20dp"
+            android:fontFamily="@font/nanumbarunpenb"
+            android:textOff="다땡겨.."
+            android:textOn="V다땡겨.."
+            android:onClick = "ischeck"/>
+        <ToggleButton
+            android:id="@+id/japanesefood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_row="2"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            android:background="#9BC2E5"
+            android:textSize="25dp"
+            android:fontFamily="@font/nanumbarunpenb"
+            android:textOff="일식"
+            android:textOn="V일식"
+            android:onClick = "ischeck"/>
+        <ToggleButton
+            android:id="@+id/westernfood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_columnSpan="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_row="2"
+            android:adjustViewBounds="true"
+            android:background="#9BC2E5"
+            android:textSize="25dp"
+            android:fontFamily="@font/nanumbarunpenb"
+            android:textOff="양식"
+            android:textOn="V양식"
+            android:onClick = "ischeck"/>
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="276dp"
+            android:layout_height="222dp"
+            android:adjustViewBounds="true"
+            android:background="#C1D9EF"
+            android:scaleType="centerInside"
+            android:src="@drawable/teacher" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <ToggleButton
+                android:id="@+id/favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_columnSpan="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_row="2"
+                android:adjustViewBounds="true"
+                android:background="#9BC2E5"
+                android:textSize="10dp"
+                android:fontFamily="@font/nanumbarunpenb"
+                android:textOff="내가 좋아하는 메뉴추가"
+                android:textOn="V내가 좋아하는 메뉴추가"
+                android:onClick = "ischeck"/>
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:fontFamily="@font/nanumbarunpenr"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/start"
+                android:onClick = "submitform"
+                android:id = "@+id/submit"
+                android:textSize="25dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

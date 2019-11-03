@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C1D9EF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:background="#9BC2E5"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:text = "오늘의 HIP 스팟 ㅋㅅㅋ"
+            android:textSize="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:textColor="#000000" />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:background="#9BC2E5"
+            android:scaleType="centerInside"
+            android:id ="@+id/testpic"
+            android:src = "@drawable/teacher"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="vertical">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/getallright"
+                android:layout_width="330dp"
+                android:layout_height="330dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/nanumbarunpenr"
+                android:text="이름 : 청담 겟올라잇 \n‎위치 : 서울특별시 강남구 도산대로 57길 18\n뉴욕 재즈바에 온 듯한 인테리어와 트렌드 저격 감성재즈 공연까지. 다양한 칵테일과 주류에 오늘은 집에안갈래~\n가격 : 칵테일 2만5천원 부터, 안주 3만원대 부터, 주류별 바틀 가격 상이"
+                android:textColor="#000000"
+                android:textSize="13dp" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/fountain"
+                android:layout_width="330dp"
+                android:layout_height="330dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/nanumbarunpenr"
+                android:text="이름 : 더 파운틴 \n‎위치 : 서울 용산구 이태원로 23길 16-5\n빈티지한 소품과 마감재 가구, 특수조명까지 힙한 뮤직비디오를 보며 술마시다보면 ??! 엄마 미안 나 오늘도 집에 안들어가... \n가격 :  보드카 12만원부터, 안주 5천원, 맥주 5천원부터"
+                android:textColor="#000000"
+                android:textSize="13dp" />
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/trap"
+                android:layout_width="330dp"
+                android:layout_height="330dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/nanumbarunpenr"
+                android:text="이름 : 트랩라운지 \n‎위치 : 서울 용산구 이태원로 27길 6 2층\n감성적이고 럭셔리한 인테리어. 야외테라스가 있어 선선한날 로맨틱한 분위기 잡기에 딱! 밤이깊어지니 신나고 힙한 노래에 엄마 .. 또 미안.. \n가격 : 보드카 14만원부터, 안주 만원대"
+                android:textColor="#000000"
+                android:layout_marginBottom="30dp"
+                android:textSize="13dp" />
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/tribe"
+                android:layout_width="330dp"
+                android:layout_height="330dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/nanumbarunpenr"
+                android:text="이름 : 펍트라이브 \n‎위치 : 서울 마포구 독막로 3길 7\n띵동~ 벨을 누르고 들어가는 독특한 술집 비가 추적추적 내리는 밤에 친구와, 연인과 와인한잔 하기 좋은곳 \n가격 : 안주 만원부터, 주류 가격은 종류별 상이"
+                android:textColor="#000000"
+                android:layout_marginBottom="30dp"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

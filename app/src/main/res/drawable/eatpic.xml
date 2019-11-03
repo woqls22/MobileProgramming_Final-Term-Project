@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item android:drawable="@drawable/bbeohaejangkuk"
+        android:duration="10" />
+    <item android:drawable="@drawable/bunsickalguksu"
+        android:duration="10" />
+    <item android:drawable="@drawable/creampasta"
+        android:duration="10" />
+    <item android:drawable="@drawable/gimchisoup"
+        android:duration="10" />
+    <item android:drawable="@drawable/gogikalguksu"
+        android:duration="10" />
+    <item android:drawable="@drawable/haemulpasta"
+        android:duration="10" />
+    <item android:drawable="@drawable/hamburger"
+        android:duration="10" />
+    <item android:drawable="@drawable/instantramen"
+        android:duration="10" />
+    <item android:drawable="@drawable/jajang"
+        android:duration="10" />
+    <item android:drawable="@drawable/japaneseramen"
+        android:duration="10" />
+    <item android:drawable="@drawable/naengmun"
+        android:duration="10" />
+    <item android:drawable="@drawable/pizza"
+        android:duration="10" />
+    <item android:drawable="@drawable/porkgogi"
+        android:duration="10" />
+    <item android:drawable="@drawable/shsui"
+        android:duration="10" />
+    <item android:drawable="@drawable/toppoki"
+        android:duration="10" />
+</animation-list>

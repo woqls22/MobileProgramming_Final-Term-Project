@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#C1D9EF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="right"
+        android:background="#9BC2E5"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:background="#9BC2E5"
+            android:scaleType="centerInside"
+            android:src="@drawable/teacher"
+          />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize = "35dp"
+            android:fontFamily="@font/nanumbarunpenb"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:text = "  오늘은 이걸로 먹자 ! "/>
+    </LinearLayout>
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:id="@+id/imageView1"
+        android:layout_width="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="250dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/teacher" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/nanumbarunpenr"
+        android:textSize = "15dp"
+        android:textColor="#000000"
+        android:id = "@+id/anal"
+        />
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:background="@drawable/start"
+        android:layout_gravity="center"
+        android:onClick = "getfood"
+        android:text="시작/중지" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize = "35dp"
+        android:fontFamily="@font/nanumbarunpenb"
+        android:textColor="#000000"
+        android:text = "메뉴 정해줘 ! "
+        android:id = "@+id/booltest"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumbarunpenr"
+        android:textSize = "15dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dp"
+        android:text = "결과에 대한 리뷰를 남겨주세요.\n 반영된 평가는 추후 데이터셀렉션에 활용됩니다."/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/nanumbarunpenr"
+           android:textSize = "15dp"
+           android:textColor="#000000"
+           android:background="#9BC2E5"
+           android:text = "마음에 들어요"
+           android:onClick = "mEvaluate"
+           android:id = "@+id/good"
+           />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/nanumbarunpenr"
+            android:textSize = "15dp"
+            android:textColor="#000000"
+            android:background="#9BC2E5"
+            android:onClick = "mEvaluate"
+            android:id = "@+id/bad"
+            android:text = "별로에요"/>
+    </LinearLayout>
+
+</LinearLayout>
